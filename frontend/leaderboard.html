@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader Smash Leaderboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">World Leader Smash</p>
+          <h1>Leaderboard</h1>
+        </div>
+        <nav class="nav-links">
+          <a class="nav-link" href="./index.html">Game</a>
+          <a class="nav-link active" href="./leaderboard.html">Leaderboard</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="matchup-header">
+          <p>Global Elo rankings, powered by the backend database.</p>
+        </section>
+
+        <section id="leaderboard-status" class="status-card">Loading leaderboard...</section>
+
+        <section class="table-wrap">
+          <table id="leaderboard-table" class="leaderboard-table hidden">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Leader</th>
+                <th>Country</th>
+                <th>Elo</th>
+                <th>Wins</th>
+                <th>Losses</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="./leaderboard.js"></script>
+  </body>
+</html>

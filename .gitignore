@@ -1,0 +1,5 @@
+backend/.venv/
+backend/app/__pycache__/
+backend/.env
+backend/data/leaders.db
+*.pyc
